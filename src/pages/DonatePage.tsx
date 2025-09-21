@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { CreditCard, Heart, Coffee, AlertCircle, CheckCircle2, Shield } from 'lucide-react';
+import { CreditCard, Heart, Coffee, CheckCircle2, Shield } from 'lucide-react';
 import { currencies, formatCurrency, convertToINR, convertFromINR } from '../utils/currencyConverter';
 import { saveDonationData } from '../services/firebaseService';
 import { toast } from 'react-toastify';
