@@ -210,66 +210,6 @@ const ImpactPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Impact Reports */}
-      <section className="py-16 bg-neutral-50">
-        <div className="container-custom">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="section-title">Impact Reports</h2>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              We believe in transparency and regularly publish reports on our impact and fund allocation.
-            </p>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <motion.div 
-              className="bg-white rounded-xl p-6 shadow-md border border-neutral-100"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <h3 className="text-xl font-bold text-neutral-800 mb-4">Annual Report 2024</h3>
-              <p className="text-neutral-600 mb-4">A comprehensive overview of our activities, impact, and financial allocation for the year 2024.</p>
-              <a 
-                href="#" 
-                className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700"
-              >
-                Download PDF
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-              </a>
-            </motion.div>
-            
-            <motion.div 
-              className="bg-white rounded-xl p-6 shadow-md border border-neutral-100"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h3 className="text-xl font-bold text-neutral-800 mb-4">Academic Impact Study</h3>
-              <p className="text-neutral-600 mb-4">Research findings on how the HopeMeals program has affected academic performance among beneficiaries.</p>
-              <a 
-                href="#" 
-                className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700"
-              >
-                Download PDF
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-              </a>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

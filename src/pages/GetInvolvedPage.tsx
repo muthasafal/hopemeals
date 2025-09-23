@@ -141,7 +141,7 @@ const GetInvolvedPage: React.FC = () => {
               <p className="text-neutral-600 mb-6">
                 If you're from a college administration, partner with us to bring HopeMeals to your campus and support your students.
               </p>
-              <a href="mailto:muthasafal@gmail.com" className="btn-primary inline-block">
+              <a href="mailto:hopemealsorg@gmail.com" className="btn-primary inline-block">
                 Contact for Partnership
               </a>
             </motion.div>
@@ -162,7 +162,7 @@ const GetInvolvedPage: React.FC = () => {
               <p className="text-neutral-600 mb-6">
                 We welcome corporate partnerships for CSR initiatives, sponsorships, and employee volunteer programs.
               </p>
-              <a href="mailto:muthasafal@gmail.com" className="btn-primary inline-block">
+              <a href="mailto:hopemealsorg@gmail.com" className="btn-primary inline-block">
                 Explore Collaboration
               </a>
             </motion.div>
@@ -429,7 +429,7 @@ const GetInvolvedPage: React.FC = () => {
                 </li>
               </ul>
               <div className="mt-8">
-                <a href="mailto:muthasafal@gmail.com" className="btn-primary inline-block">
+                <a href="mailto:hopemealsorg@gmail.com" className="btn-primary inline-block">
                   Contact for Partnership
                 </a>
               </div>

@@ -2,10 +2,7 @@ import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ImpactStats from '../components/ImpactStats';
-import Testimonials from '../components/Testimonials';
 import DonateSection from '../components/DonateSection';
-import GetInvolvedSection from '../components/GetInvolvedSection';
-import BlogPreview from '../components/BlogPreview';
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -18,10 +15,7 @@ const HomePage: React.FC = () => {
       <HeroSection />
       <AboutSection />
       <ImpactStats />
-      <Testimonials />
       <DonateSection />
-      <GetInvolvedSection />
-      <BlogPreview />
     </>
   );
 };

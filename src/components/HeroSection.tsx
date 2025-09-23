@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1 mb-4 bg-primary-100 text-primary-600 rounded-full font-medium text-sm">Created by a Class 10 Student</span>
+            <span className="inline-block px-4 py-1 mb-4 bg-primary-100 text-primary-600 rounded-full font-medium text-sm">Created by a Class 11 Student</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-neutral-800 mb-4 leading-tight">
               Supporting Medical Students in <span className="text-primary-600">Pune</span>
             </h1>

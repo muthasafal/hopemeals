@@ -90,7 +90,9 @@ const DonatePage: React.FC = () => {
         try {
           // Save donation data to Firebase after successful payment
           const finalAmountInINR = convertToINR(finalAmountInSelectedCurrency, selectedCurrency);
+          const id = name + " - " + response.razorpay_payment_id
           await saveDonationData({
+            id,
             name,
             email,
             amount: finalAmountInSelectedCurrency,
@@ -157,7 +159,7 @@ const DonatePage: React.FC = () => {
 
   const finalAmountInSelectedCurrency = donationAmount || (customAmount ? parseFloat(customAmount) : 0);
   const finalAmountInINR = convertToINR(finalAmountInSelectedCurrency, selectedCurrency);
-  const mealsCount = Math.floor(finalAmountInINR / 3000);
+  const mealsCount = Math.floor(finalAmountInINR / 1000);
 
   const currentCurrency = currencies.find(c => c.code === selectedCurrency);
 
@@ -292,13 +294,13 @@ const DonatePage: React.FC = () => {
                           </div>
                           {finalAmountInSelectedCurrency > 0 && (
                             <p className="text-sm text-neutral-600 mt-2">
-                              This will provide {mealsCount} meal{mealsCount !== 1 ? 's' : ''} to students in need
+                              This will provide {mealsCount} meal{mealsCount !== 1 ? 's' : ''} daily to students in need for 30 days
                             </p>
                           )}
                         </div>
                       </div>
                       
-                      {/* Personal Information */}
+                      {/* Personal Information */}  
                       <div className="mb-8">
                         <h3 className="text-lg font-semibold mb-4">Your Information</h3>
                         <div className="space-y-4">
@@ -422,13 +424,13 @@ const DonatePage: React.FC = () => {
                 <div className="bg-white rounded-lg p-4 mb-4">
                   <div className="flex items-center gap-3 mb-2">
                     <Coffee size={20} className="text-primary-600" />
-                    <p className="font-semibold">{formatCurrency(3000, selectedCurrency)} = 1 nutritious meal</p>
+                    <p className="font-semibold">{formatCurrency(3000, selectedCurrency)} = 3 nutritious meals every day</p>
                   </div>
                   <div className="h-2 bg-neutral-200 rounded-full overflow-hidden">
                     <div className="h-full bg-primary-500 rounded-full" style={{ width: `${Math.min((convertToINR(finalAmountInSelectedCurrency || 0, selectedCurrency)) / 50, 100)}%` }}></div>
                   </div>
                   <p className="text-sm text-neutral-600 mt-2">
-                    Your donation of {formatCurrency(finalAmountInSelectedCurrency || 0, selectedCurrency)} will provide {mealsCount} meal{mealsCount !== 1 ? 's' : ''}
+                    Your donation of {formatCurrency(finalAmountInINR, selectedCurrency)} will provide {mealsCount} meal{mealsCount !== 1 ? 's' : ''}
                   </p>
                 </div>
               </div>
@@ -444,7 +446,7 @@ const DonatePage: React.FC = () => {
                 <p className="text-neutral-600 mb-4">
                   For any queries regarding donations or tax receipts, please contact our team:
                 </p>
-                <p className="text-primary-600 font-medium">muthasafal@gmail.com</p>
+                <p className="text-primary-600 font-medium">hopemealsorg@gmail.com</p>
                 <div className="mt-4 pt-4 border-t border-neutral-200">
                   <div className="flex items-center justify-center gap-2 text-sm text-neutral-500">
                     <Shield size={16} />
@@ -471,7 +473,7 @@ const DonatePage: React.FC = () => {
               <p className="text-lg text-neutral-600 mb-8">
                 We welcome corporate partnerships and CSR initiatives. Your organization can make a significant impact on student welfare and education.
               </p>
-              <a href="mailto:muthasafal@gmail.com" className="btn-primary">
+              <a href="mailto:hopemealsorg@gmail.com" className="btn-primary">
                 Contact Us for Corporate Giving
               </a>
             </motion.div>

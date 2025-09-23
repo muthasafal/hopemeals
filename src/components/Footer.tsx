@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import terms from '../../Files/T&C.pdf';
 
 const Footer: React.FC = () => {
   return (
@@ -17,7 +18,10 @@ const Footer: React.FC = () => {
               </span>
             </Link>
             <p className="text-neutral-300 leading-relaxed">
-              A student-led initiative based in Pune, dedicated to combating student hunger in government colleges through NFC-enabled meal cards.
+              A student-led initiative based in Pune, dedicated to combating student hunger in government medical colleges.
+            </p>
+            <p className="text-neutral-300 leading-relaxed">
+              In association with A.S. Foundation.
             </p>
           </div>
           
@@ -57,7 +61,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary-500 flex-shrink-0" />
-                <span className="text-neutral-300">muthasafal@gmail.com</span>
+                <span className="text-neutral-300">hopemealsorg@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -92,8 +96,7 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} HopeMeals. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-neutral-400">
-            <a href="#" className="hover:text-primary-500 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary-500 transition-colors">Terms of Service</a>
+            <a href={terms} className="hover:text-primary-500 transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-primary-500 transition-colors">Cookie Policy</a>
           </div>
         </div>

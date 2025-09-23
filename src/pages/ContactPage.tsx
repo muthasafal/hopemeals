@@ -49,10 +49,10 @@ const ContactPage: React.FC = () => {
     {
       icon: <Mail size={24} className="text-primary-600" />,
       title: "Email Address",
-      details: "muthasafal@gmail.com",
+      details: "hopemealsorg@gmail.com",
       action: {
         text: "Send Email",
-        url: "mailto:muthasafal@gmail.com"
+        url: "mailto:hopemealsorg@gmail.com"
       }
     },
     {
@@ -242,7 +242,7 @@ const ContactPage: React.FC = () => {
               
               <div className="rounded-xl overflow-hidden shadow-md h-96">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2613173278896!2d73.9063906!3d18.5642456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sRohan%20Mithila!5e0!3m2!1sen!2sin!4v1635789012345!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.029272770234!2d73.9072482746534!3d18.57271896758033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10052232253%3A0x9dc532b30d71f2d!2sBuilding%20N%2C%20Rohan%20Mithila%201%20%5BA-Y%5D!5e0!3m2!1sen!2sin!4v1758637041644!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -296,7 +296,7 @@ const ContactPage: React.FC = () => {
               <div className="bg-neutral-50 rounded-xl p-6 border border-neutral-100">
                 <h3 className="text-xl font-bold text-neutral-800 mb-3">How can my college partner with HopeMeals?</h3>
                 <p className="text-neutral-600">
-                  If you're from a college administration, you can contact us through the Corporate Partnership form or email us at muthasafal@gmail.com to discuss collaboration.
+                  If you're from a college administration, you can contact us through the Corporate Partnership form or email us at hopemealsorg@gmail.com to discuss collaboration.
                 </p>
               </div>
               <div className="bg-neutral-50 rounded-xl p-6 border border-neutral-100">

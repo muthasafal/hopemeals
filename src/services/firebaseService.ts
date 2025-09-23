@@ -14,6 +14,7 @@ export interface StudentApplication {
 }
 
 export interface DonationData {
+  id: string;
   name: string;
   email: string;
   amount: number;
