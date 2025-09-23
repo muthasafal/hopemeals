@@ -80,7 +80,7 @@ const DonatePage: React.FC = () => {
     };
 
     const options = {
-      key: 'rzp_test_RJhdVKPAteKogv', // Your Razorpay key ID
+      key: 'rzp_live_RL6D8mQ7pmhZJl', // Your Razorpay key ID
       amount: getAmountInSmallestUnit(finalAmountInSelectedCurrency, selectedCurrency),
       currency: selectedCurrency,
       name: 'HopeMeals',
