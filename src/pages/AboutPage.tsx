@@ -101,7 +101,7 @@ const AboutPage: React.FC = () => {
             >
               <h2 className="section-title">Our Story</h2>
               <p className="text-lg text-neutral-600 mb-6">
-                HopeMeals was founded in 2024 by a Class 10 student after visiting a government medical college and witnessing several medical students skipping meals due to financial constraints.
+                HopeMeals was founded in 2025 by a Class 10 student after visiting a government medical college and witnessing several medical students skipping meals due to financial constraints.
               </p>
               <p className="text-lg text-neutral-600 mb-6">
                 Disturbed by the impact of hunger on students' health and academic performance, he envisioned a solution that would ensure regular access to nutritious food without compromising the students' dignity.

@@ -47,7 +47,7 @@ const AboutSection: React.FC = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary-500 text-white p-6 rounded-2xl shadow-lg hidden md:block">
-              <p className="text-xl font-bold">Since 2024</p>
+              <p className="text-xl font-bold">Since 2025</p>
               <p className="text-sm">Serving Pune's students</p>
             </div>
           </motion.div>

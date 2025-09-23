@@ -93,7 +93,7 @@ const ImpactPage: React.FC = () => {
           >
             <h2 className="section-title">The Numbers That Matter</h2>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Since our inception in 2024, we've made significant strides in combating student hunger.
+              Since our inception in 2025, we've made significant strides in combating student hunger.
             </p>
           </motion.div>
           
