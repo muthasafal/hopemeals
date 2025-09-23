@@ -97,7 +97,8 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex space-x-6 text-sm text-neutral-400">
             <a href={terms} className="hover:text-primary-500 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary-500 transition-colors">Cookie Policy</a>
+            <a href='https://merchant.razorpay.com/policy/QeD5ZmiTFb9sPt/privacy' className="hover:text-primary-500 transition-colors">Privacy Policy</a>
+            <a href='https://merchant.razorpay.com/policy/QeD5ZmiTFb9sPt/refund' className="hover:text-primary-500 transition-colors">Refund Policy</a>
           </div>
         </div>
       </div>

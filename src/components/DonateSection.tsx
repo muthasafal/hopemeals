@@ -139,7 +139,7 @@ const DonateSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <p>All donations are tax-deductible under Section 80G of the Income Tax Act, India.</p>
+            <p>All donations are tax-deductible under Section 80G of the Income Tax Act, India. A receipt would be shared within 1-2 business days!</p>
             <p className="mt-2">100% of your donation goes directly to providing meals for students.</p>
           </motion.div>
         </div>

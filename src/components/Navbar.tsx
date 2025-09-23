@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X} from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +41,11 @@ const Navbar: React.FC = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2 text-xl font-bold">
-          <Heart size={28} className="text-primary-600 fill-primary-500" />
+         <img
+          src="/nobg.png"
+          alt="HopeMeals Logo"
+          className="w-12 h-12 object-contain"
+        />
           <span className={`font-heading transition-colors duration-300 ${isScrolled ? 'text-primary-600' : 'text-primary-600'}`}>
             Hope<span className="text-secondary-600">Meals</span>
           </span>
